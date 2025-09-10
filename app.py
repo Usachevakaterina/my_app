@@ -1,16 +1,15 @@
 import streamlit as st
 
-# Простейшее приложение которое точно работает
-st.title('🎉 Мое первое приложение!')
-st.write('Сегодня хорошая погода! ☀️')
-st.success('Всё работает отлично! 🚀')
+st.set_page_config(page_title="My App", page_icon="🚀")
 
-# Добавим немного интерактивности
-name = st.text_input('Как вас зовут?')
+st.title("My First App!")
+st.write("Hello! This app works online!")
+st.success("Everything works!")
+
+name = st.text_input("What is your name?")
 if name:
-    st.write(f'Привет, {name}! 👋')
+    st.write(f"Hello, {name}! 👋")
 
-# Кнопка для проверки
-if st.button('Нажми меня!'):
+if st.button("Click me!"):
     st.balloons()
-    st.write('🎊 Ура! Получилось!')
+    st.write("🎉 Celebration! The site is working!")
