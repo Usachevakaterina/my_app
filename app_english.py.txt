@@ -1,0 +1,15 @@
+import streamlit as st
+
+st.set_page_config(page_title="My App", page_icon="🚀")
+
+st.title("My First App!")
+st.write("Hello! This app works online!")
+st.success("Everything works!")
+
+name = st.text_input("What is your name?")
+if name:
+    st.write(f"Hello, {name}! 👋")
+
+if st.button("Click me!"):
+    st.balloons()
+    st.write("🎉 Celebration! The site is working!")
